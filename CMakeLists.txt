@@ -67,7 +67,19 @@ install(TARGETS libnfs EXPORT libnfs
 
 install(DIRECTORY
   include/nfsc
-  DESTINATION include)
+  DESTINATION include
+)
+
+install(FILES
+  mount/libnfs-raw-mount.h
+  nfs/libnfs-raw-nfs.h
+  nlm/libnfs-raw-nlm.h
+  nsm/libnfs-raw-nsm.h
+  portmap/libnfs-raw-portmap.h
+  rquota/libnfs-raw-rquota.h
+  DESTINATION include/nfsc
+)
+
 
 install(EXPORT libnfs
   FILE
