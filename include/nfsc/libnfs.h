@@ -1558,8 +1558,8 @@ struct nfs_server_list {
  *
  * returned data must be freed by nfs_free_srvr_list(srv);
  */
-struct nfs_server_list *nfs_find_local_servers(void);
-void free_nfs_srvr_list(struct nfs_server_list *srv);
+EXTERN struct nfs_server_list *nfs_find_local_servers(void);
+EXTERN void free_nfs_srvr_list(struct nfs_server_list *srv);
 
 /*
  * sync nfs_set_timeout()
